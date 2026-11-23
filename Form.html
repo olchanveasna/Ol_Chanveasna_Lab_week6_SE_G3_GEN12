@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .field{
+            margin-bottom: 20px;
+        }
+        .container{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="field">
+                <label for="fname">First name:</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter first name" required>
+            </div>
+            <div class="field">
+                <label for="lname">Last name:</label><br>
+                <input type="text" name="lname" id="lname" placeholder="Enter last name">
+            </div>
+            <div class="field">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+                <label for="pw">Password:</label><br>
+                <input type="password" name="pw" id="pw" placeholder="Enter password">
+            </div>
+            <div class="field">
+                <label for="age">Age:</label><br>
+                <input type="number" name="age" id="age" placeholder="Your age">
+            </div>
+            <div class="field">
+                <p>Gender:</p>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="field">
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="field">
+                <label for="country">Country:</label><br>
+                <select name="country" id="country">
+                    <option value="">-- Select --</option>
+                    <option value="kh">Cambodia</option>
+                    <option value="us">United States of America</option>
+                    <option value="china">China</option>
+                    <option value="indo">Indonesia</option>
+                </select>
+            </div>
+            <div class="field">
+                <input type="checkbox" name="condition" id="agree" value="agree">
+                <label for="agree">I agree to the terms and conditions</label>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
